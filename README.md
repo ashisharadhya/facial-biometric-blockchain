@@ -1,34 +1,63 @@
-# Facial Biometric Key Generation for Blockchain Storage (In Progress)
+# Facial Biometric-Based Key Generation for Secure Data Storage
 
-This project aims to implement a facial biometric-based cryptographic key generation system for secure data storage using blockchain technology. The goal is to enhance security by ensuring only authenticated users can access encrypted data, leveraging biometric identity and decentralized storage.
+A facial biometric authentication system that generates secure cryptographic keys from facial landmarks, enabling identity-based encryption without storing raw biometric data.
 
-🧠 Objectives
-- Generate unique cryptographic keys from facial features
-- Encrypt and securely store these keys using blockchain concepts
-- Ensure data integrity and tamper-resistance
-- Maintain privacy by not storing raw facial data
+> Developed collaboratively with [Ayush N Shetty](https://github.com/AyuShetty) as part of our final-year B.Tech project. See the original collaborative repo [here](https://github.com/AyuShetty/Facial-Keygen).
 
- 🛠️ Technologies
-- Python – core language for development
-- OpenCV – facial detection and preprocessing
-- Cryptography – key generation and encryption
-- Blockchain Concepts – decentralized storage, data validation
-- (Solidity or web3 to be explored in next phase)
+## Overview
 
-🚧 Project Status
-🔧 Currently under development as part of a B.Tech academic project  
-📅 Started: January 2025  
-📍 Present Phase: Facial feature capture and key generation logic
+This project explores how facial biometrics can be used to generate secure, repeatable cryptographic keys for authentication — eliminating the need to store passwords or raw biometric templates. Facial landmarks are extracted, processed, and used to derive a unique key per user through hashing, which can then be used for identity verification.
 
-📁 Folder Structure (planned)
+## Features
 
+- Facial landmark extraction using MediaPipe Face Mesh
+- Dimensionality reduction of facial feature vectors via Principal Component Analysis (PCA)
+- Secure key generation using SHA-256 hashing
+- API server for handling authentication requests
+- CLI-based demo for testing the pipeline end-to-end
 
- 👤 Author
-Ashish A Aradhya
-B.Tech in Information Science – NMAM Institute of Technology  
-📫 [ashishaaradhya7@gmail.com](mailto:ashishaaradhya7@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com/in/ashish-a-aradhya-64975225a)
+## Tech Stack
 
+- **Language:** Python
+- **Computer Vision:** MediaPipe Face Mesh, OpenCV
+- **Cryptography:** SHA-256 hashing
+- **ML:** Principal Component Analysis (PCA) for feature dimensionality reduction
 
+## Project Structure
+facial_keygen_system.py      # Core biometric processing and key generation logic
+api_server.py                # API server for authentication requests
+demo.py                       # CLI demo script
+setup.py                      # Project setup/installation
+production_requirements.txt   # Python dependencies
 
+## Setup & Usage
 
+1. Clone the repository:
+```bash
+   git clone https://github.com/ashisharadhya/facial-biometric-blockchain.git
+   cd facial-biometric-blockchain
+```
+
+2. Install dependencies:
+```bash
+   pip install -r production_requirements.txt
+```
+
+3. Run the demo:
+```bash
+   python demo.py
+```
+
+4. Or start the API server:
+```bash
+   python api_server.py
+```
+
+## Authors
+
+- **Ashish A Aradhya** — [GitHub](https://github.com/ashisharadhya) · [LinkedIn](https://www.linkedin.com/in/ashish-a-aradhya-64975225a)
+- **Ayush N Shetty** — [GitHub](https://github.com/AyuShetty)
+
+## Status
+
+Core pipeline implemented — facial landmark extraction, PCA-based feature reduction, and SHA-256 key generation are functional. Future work may include blockchain integration for decentralized key storage.
