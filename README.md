@@ -2,7 +2,7 @@
 
 A facial biometric authentication system that generates secure cryptographic keys from facial landmarks, enabling identity-based encryption without storing raw biometric data.
 
-> Developed collaboratively with [Ayush N Shetty](https://github.com/AyuShetty) as part of our final-year B.Tech project. See the original collaborative repo [here](https://github.com/AyuShetty/Facial-Keygen).
+> Built as part of a final-year B.Tech team project.
 
 ## Overview
 
@@ -24,6 +24,7 @@ This project explores how facial biometrics can be used to generate secure, repe
 - **ML:** Principal Component Analysis (PCA) for feature dimensionality reduction
 
 ## Project Structure
+
 facial_keygen_system.py      # Core biometric processing and key generation logic
 api_server.py                # API server for authentication requests
 demo.py                       # CLI demo script
@@ -53,10 +54,9 @@ production_requirements.txt   # Python dependencies
    python api_server.py
 ```
 
-## Authors
+## Author
 
 - **Ashish A Aradhya** — [GitHub](https://github.com/ashisharadhya) · [LinkedIn](https://www.linkedin.com/in/ashish-a-aradhya-64975225a)
-- **Ayush N Shetty** — [GitHub](https://github.com/AyuShetty)
 
 ## Status
 
